@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+<title>Document</title>
+</head>
+<body>
+    <!-- header using bootstrap -->
+	<div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1><mark>Heading:</mark> <small><abbr></abbr>Small</small></h1>
+        <p>Resize this <abbr title>responsive</abbr> page to see the effect!</p> 
+  </div>
+  
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+          </button>
+          
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+        </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+  </nav>
+  
+  <!-- columns using bootstrap -->
+  <div class="container mt-5">
+        <div class="row">
+          
+          <!-- column 1 -->
+          <div class="col-sm-4 text-success">
+                <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>	
+          
+          <!-- column 2 -->
+          <div class="col-sm-4 text-warning">
+                <h3>Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          
+          <!-- column 3 -->
+          <div class="col-sm-4 text-danger">
+                <h3>Column 3</h3>        
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
+  </div>
+  
+  <div class="container mt-3">
+    <h2>Basic Table</h2>           
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mason</td>
+          <td>Garrod</td>
+          <td>mason@example.com</td>
+        </tr>
+        <tr>
+          <td>Garrod</td>
+          <td>Mason</td>
+          <td>garrod@example.com</td>
+        </tr>
+        <tr>
+          <td>Kennedy</td>
+          <td>Garrod</td>
+          <td>kennedy@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- jumbotron (big block of stuff)-->
+  <div class="container mt-3">
+    <h2>Example of Jumbotron</h2>
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+      <h1>Jumbotron Example</h1> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+    </div>
+  </div>
+<!-- comment-->
+  <!-- Spinner spinn -->
+  <div class="container mt-3">
+    <h2>Spinners</h2>
+    <div class="spinner-border spinner-border-sm text-primary"></div>    
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-secondary"></div>
+  </div>
+
+  <!-- Glowing Spinners -->
+  <div class="container mt-3">
+    <h2>Glowing Spinners</h2>
+    <div class="spinner-grow spinner-grow-sm text-primary"></div>
+    <div class="spinner-grow text-muted"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-success"></div>
+    <div class="spinner-grow text-secondary"></div>
+  </div>
+
+  <!-- Spinner Button -->
+<div class="container mt-3">
+    <h2>Spinner Button</h2>
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+      </button>
+</div>
+
+<!-- Glowing Spinner Button -->
+<div class="container mt-3">
+    <h2>Glowing Spinner Button</h2>
+    <button class="btn btn-primary">
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading..
+      </button>
+</div>
+
+<!-- Select Option -->
+<div class="container mt-3">
+    <h2>Datalist</h2>
+    <label for="browser" class="form-label">Choose your browser from the list:</label>
+    <input class="form-control" list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</div>
+
+<!-- Card Format -->
+<div class="container mt-3">
+  <h2>Cards Format</h2>
+  <div class="card">
+    <div class="card-header bg-success">Header</div>
+    <div class="card-body bg-warning">Content</div>
+    <div class="card-footer bg-danger">Footer</div>
+  </div>
+</div>
+
+<!-- Cards with links & images -->
+<h2 class="text-center mt-3">Card with Image</h2>
+<div class="container mt-3 d-flex flex-row col-md-5">
+  <div class="card text-center" style="width:400px">
+    <img class="card-img-top" src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Mr. moew</h4>
+      <p class="card-text">Such a silly guy.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+  <div class="card text-center" style="width:400px">
+    <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/02/95/94/94/1000_F_295949484_8BrlWkTrPXTYzgMn3UebDl1O13PcVNMU.jpg" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">Mr. mow</h4>
+      <p class="card-text">Such a small guy.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+<!-- Email and Password Entry Form -->
+<div class="container-mt-3 text-center mt-3">
+  <h2>Entry Form</h2>
+  <form action="#">
+    <div class="mb-3 mt-3">
+      <label for="email" class="form-label"></label>
+      <input type="email" class="form-control-lg" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label"></label>
+      <input type="password" class="form-control-lg" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<!-- comment-->
+<!-- Selecting Ranges -->
+<div class="container mt-3">
+  <h2>Selecting Ranges</h2>
+  <form action="#">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" name="points">
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+<!-- Floating Labels -->
+<div class="container mt-3">
+  <h2>Floating Labels</h2>
+  <form action="#">
+    <div class="form-floating mb-3 mt-3">
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label for="email">Email</label>
+    </div>
+    <div class="form-floating mt-3 mb-3">
+      <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      <label for="pwd">Password</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </form>
+</div>
+
+</body>
+</html>
